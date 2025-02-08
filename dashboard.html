@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-green-900 text-white p-5">
+            <h1 class="text-2xl font-bold mb-6">Finance Dashboard</h1>
+            <nav>
+                <ul>
+                    <li class="mb-3"><a href="#" class="block p-2 rounded hover:bg-green-700">Overview</a></li>
+                    <li class="mb-3"><a href="#" class="block p-2 rounded hover:bg-green-700">Income</a></li>
+                    <li class="mb-3"><a href="#" class="block p-2 rounded hover:bg-green-700">Expenses</a></li>
+                    <li class="mb-3"><a href="#" class="block p-2 rounded hover:bg-green-700">Savings</a></li>
+                    <li class="mb-3"><a href="#" class="block p-2 rounded hover:bg-green-700">Goals</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <h2 class="text-3xl font-semibold mb-4 text-green-900">Overview</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold text-green-800">Total Income</h3>
+                    <p class="text-green-500 text-2xl font-semibold">$5,000</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold text-green-800">Total Expenses</h3>
+                    <p class="text-red-500 text-2xl font-semibold">$2,500</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-md">
+                    <h3 class="text-xl font-bold text-green-800">Net Savings</h3>
+                    <p class="text-green-500 text-2xl font-semibold">$2,500</p>
+                </div>
+            </div>
+            
+            <h2 class="text-2xl font-semibold mt-6 mb-4 text-green-900">Recent Transactions</h2>
+            <div class="bg-white p-4 rounded shadow-md">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="text-left p-2 text-green-800">Date</th>
+                            <th class="text-left p-2 text-green-800">Category</th>
+                            <th class="text-left p-2 text-green-800">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-2">Feb 5, 2025</td>
+                            <td class="p-2">Salary</td>
+                            <td class="p-2 text-green-500">+$3,000</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-2">Feb 6, 2025</td>
+                            <td class="p-2">Groceries</td>
+                            <td class="p-2 text-red-500">-$200</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2">Feb 7, 2025</td>
+                            <td class="p-2">Rent</td>
+                            <td class="p-2 text-red-500">-$1,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
